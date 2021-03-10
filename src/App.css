@@ -9,6 +9,10 @@ body {
   background-color: #282c34;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
   background-image: url("/src/img/stadium.jpg");
   color: #fff;
@@ -54,6 +58,44 @@ main {
   cursor: pointer;
 }
 
+.details {
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+  color: #fff;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 50px;
+  padding: 20px;
+  background-color: #1ca5b8;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.card .info {
+  display: grid;
+  grid-gap: 8px;
+}
+.league-image {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+header img {
+  height: 200px;
+}
+.social-link {
+  height: 50px;
+  text-align: center;
+}
+.social-link span img {
+  max-height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
 footer {
   color: #fff;
   text-align: center;
