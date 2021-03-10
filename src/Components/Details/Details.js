@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFlag, faFutbol, faMarsStroke } from '@fortawesome/free-solid-svg-icons'
 import male from '../../img/male.png'
+import female from '../../img/female.png'
 import Facebook from '../../icon/Facebook.png'
 import Twitter from '../../icon/Twitter.png'
 import Youtube from '../../icon/YouTube.png'
@@ -37,7 +38,9 @@ const Details = () => {
                         <h4><FontAwesomeIcon icon={faMarsStroke}></FontAwesomeIcon> Gender: {league.strGender}</h4>
                     </div>
                     <div className="league-image">
-                        <img src={male} alt="" />
+                        {
+                            league.strGender === 'Male' ? <img src={male} alt="" /> : <img src={female} alt="" />
+                        }
                     </div>
                 </div>
                 <div className="description">
@@ -52,7 +55,6 @@ const Details = () => {
                     </span>
                     <span className='social'>
                         <a href={`https://${league.strYoutube}`} > <img src={Youtube} alt="" /></a>
-                        <a href='https://www.youtube.com/channel/UCSZbXT5TLLW_i-5W8FZpFsg' > <img src={Youtube} alt="" /></a>
                     </span>
                 </div>
             </section>
