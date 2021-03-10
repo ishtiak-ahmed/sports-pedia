@@ -1,6 +1,6 @@
 # Sports Pedia
 
-## Check The Live Site [Here](https://github.com/ishtiak-ahmed)
+## Check The Live Site [Here](https://sports-pedia.netlify.app)
 
 ### Sports Pedia is the league database of all sports league events around the world.
 
