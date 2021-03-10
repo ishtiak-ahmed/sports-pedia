@@ -1,3 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #282c34;
+}
+
+header {
+  background-image: url("/src/img/stadium.jpg");
+  color: #fff;
+  text-align: center;
+  background-position: center;
+}
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+main {
+  width: 1200px;
+  padding: 15px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.item {
+  background-color: #fffff3;
+  padding: 15px 5px;
+  display: grid;
+  grid-gap: 7px;
+  border-radius: 5px;
+  text-align: center;
+}
+.explore-btn {
+  padding: 6px 20px;
+  outline: none;
+  font-size: 0.9em;
+  border: none;
+  background-color: #1ca5b8;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer a {
+  color: #1ca5b8;
+  text-decoration: none;
+}
+
+/* Old CSS */
 .App {
   text-align: center;
 }

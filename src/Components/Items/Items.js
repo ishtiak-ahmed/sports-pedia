@@ -10,13 +10,13 @@ const Items = () => {
             .then(data => setLeague(data.leagues))
     }, [])
     // const [page, setPage] = useState(1)
-    const currentData = league.slice(0, 15)
+    const currentData = league.slice(0, 16)
     return (
-        <div>
+        <main>
             {
                 currentData.map(lg => <Item key={lg.idLeague} data={lg}></Item>)
             }
-        </div>
+        </main>
     );
 };
 

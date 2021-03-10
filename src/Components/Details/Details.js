@@ -17,6 +17,9 @@ const Details = () => {
             <Header>
                 <h1>{league.strLeague}</h1>
             </Header>
+            <main>
+
+            </main>
             <h2>Name : {league.strLeague} </h2>
             <p>Sport Type: {league.strSport}</p>
             <p>{league.strDescriptionEN}</p>
