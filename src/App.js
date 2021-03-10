@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Details from './Components/Details/Details';
+import NoMatch from './Components/NoMatch/NoMatch';
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
         <Route exact path="/">
           <Home></Home>
         </Route>
-        <Route exact path="/league/:id">
+        <Route path="/league/:id">
           <Details></Details>
+        </Route>
+        <Route path="*">
+          <NoMatch></NoMatch>
         </Route>
       </Switch>
     </Router>

@@ -8,7 +8,7 @@ const Item = ({ data }) => {
     return (
         <div className='item'>
             <h3>{strLeague}</h3>
-            <h4>Sports Type: {strSport}</h4>
+            <h5>Sports Type: {strSport}</h5>
             <Link to={`/league/${idLeague}`}>
                 <button className='explore-btn'>
                     Explore  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>

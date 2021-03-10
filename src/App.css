@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+/* Default Style */
 *,
 *::after,
 *::before {
@@ -8,11 +11,20 @@
 body {
   background-color: #282c34;
   width: 100vw;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
   max-width: 100%;
 }
+
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+/* Header Style */
 
 header {
   background-image: url("/src/img/stadium.jpg");
@@ -29,12 +41,17 @@ header h1 {
   background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
-  padding: 40px;
+  padding: 40px 0;
 }
 
+header img {
+  height: 200px;
+}
+
+/* Main Part Style */
 main {
   max-width: 1200px;
-  padding: 15px;
+  padding: 20px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -58,6 +75,8 @@ main {
   font-weight: 500;
   cursor: pointer;
 }
+
+/* Details Page Style */
 
 .details {
   max-width: 1200px;
@@ -85,14 +104,12 @@ main {
   overflow: hidden;
   border-radius: 20px;
 }
-header img {
-  height: 200px;
-}
+
 .social-link {
   height: 50px;
   text-align: center;
 }
-.social-link span img {
+.social-link img {
   max-height: 50px;
   margin: 10px;
   cursor: pointer;
@@ -100,14 +117,16 @@ header img {
 footer {
   color: #fff;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 footer a {
   color: #1ca5b8;
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+/* Media Query For Responsiveness */
+
+@media (max-width: 968px) {
   main {
     grid-template-columns: 1fr 1fr;
   }
