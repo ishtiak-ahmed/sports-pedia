@@ -14,9 +14,12 @@ const Details = () => {
     }, [id])
     return (
         <div>
-            <Header></Header>
+            <Header>
+                <h1>{league.strLeague}</h1>
+            </Header>
             <h2>Name : {league.strLeague} </h2>
             <p>Sport Type: {league.strSport}</p>
+            <p>{league.strDescriptionEN}</p>
             <Footer></Footer>
         </div>
     );

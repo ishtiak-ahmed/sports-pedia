@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header>
-            <h1>Sports Pedia</h1>
-            <h3>Find Information of All The Sports League Of The World.</h3>
+            {props.children}
         </header>
     );
 };
